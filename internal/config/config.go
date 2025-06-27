@@ -316,9 +316,9 @@ func setProviderDefaults() {
 
 	// OpenRouter configuration
 	if key := viper.GetString("providers.openrouter.apiKey"); strings.TrimSpace(key) != "" {
-		viper.SetDefault("agents.coder.model", models.OpenRouterClaude37Sonnet)
-		viper.SetDefault("agents.summarizer.model", models.OpenRouterClaude37Sonnet)
-		viper.SetDefault("agents.task.model", models.OpenRouterClaude37Sonnet)
+		viper.SetDefault("agents.coder.model", models.OpenRouterClaude4Sonnet)
+		viper.SetDefault("agents.summarizer.model", models.OpenRouterClaude4Sonnet)
+		viper.SetDefault("agents.task.model", models.OpenRouterClaude4Sonnet)
 		viper.SetDefault("agents.title.model", models.OpenRouterClaude35Haiku)
 		return
 	}
